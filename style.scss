@@ -22,6 +22,7 @@
  *
  * 2.0 - Formulários
  * 3.0 - Listas
+ * 4.0 - Espaçamentos
  * x.0 - Geral
  */
 
@@ -81,20 +82,29 @@
 **** 1.3 Centralizando verticalmente
 ***/
 
-// GULP HACK FOR IE HACK
-$position: '#position';
-$top: '#top';
+.dd-box-center {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-direction: column;
 
-.dd-all-center {
-  #{ $position }: absolute;
-  #{ $top }: 50%;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.dd-center {
-  #{ $position }: relative;
-  #{ $top }: -50%;
+    // FIREFOX HACK
+    @-moz-document url-prefix() {
+      // ....
+    }
 }
 
 /*** - ***/
@@ -162,6 +172,25 @@ select {
 
 .dd-block-list > * {
   display: block;
+}
+
+/*** - ***/
+
+/***
+**** 4.0 Espaçamentos
+***/
+
+.dd-margin-vertical {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dd-margin-bottom {
+  margin-bottom: 10px;
+}
+
+.dd-margin-top {
+  margin-top: 10px;
 }
 
 /*** - ***/
