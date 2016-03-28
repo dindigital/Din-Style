@@ -18,6 +18,7 @@
  * 2.0 - Formulários
  * 3.0 - Listas
  * 4.0 - Espaçamentos
+ * 5.0 - Reset Inputs
  * x.0 - Geral
  */
 /*** 1.0 POSICIONAMENTO
@@ -78,7 +79,7 @@
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-flex-direction: column; }
-@-moz-document url-prefix() {}
+
 /*** - ***/
 /***
 **** 2.0 Formulários
@@ -145,6 +146,25 @@ select.dd-error {
 
 .dd-padding-bottom {
   padding-bottom: 10px; }
+
+/*** - ***/
+/***
+**** 5.0 Reset Inputs
+***/
+/* Remove button padding in FF */
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin-top: -2px;
+  margin-bottom: -2px; }
 
 /*** - ***/
 /***
