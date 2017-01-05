@@ -1,0 +1,37 @@
+/***
+**** 2.0 Formulários
+***/
+
+.dd-load {
+  display: inline-block;
+  // width: 30px;
+  // height: 30px;
+  // background-image: $load;
+  // background-repeat: no-repeat;
+  // background-size: 100%;
+  font: normal normal normal 14px/1 FontAwesome;
+
+  &:before {
+    content: "\f110";
+  }
+}
+
+.dd-error {
+  color: $c-red;
+}
+
+input,
+textarea,
+button,
+select {
+  &.dd-error {
+    border: 1px solid;
+    border-color: $c-red;
+  }
+}
+
+.dd-success {
+  color: $c-green;
+}
+
+/*** - ***/

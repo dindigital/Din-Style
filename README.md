@@ -21,3 +21,6 @@ Para MAC, abra o terminal e entre no repositório do framework. Depois é só ro
 `sass --watch style.scss:style.css`
 
 Este comando cria um novo arquivo `style.css` no mesmo diretório traduzindo as linhas digitadas em `.scss` para `.css`.
+
+## Atualização do Repositório e Bower
+

@@ -1,6 +1,6 @@
 {
   "name": "din-style-framework",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "homepage": "https://github.com/dindigital/Din-Style",
   "authors": [
     "Din Digital"
@@ -9,8 +9,8 @@
   "main": "style.css",
   "moduleType": [],
   "keywords": [
-    "din",
-    "style"
+    "din style",
+    "din digital"
   ],
   "license": "MIT",
   "ignore": [

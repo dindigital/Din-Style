@@ -1,0 +1,73 @@
+/*** 1.0 POSICIONAMENTO
+****   1.1 - Centralizando conteúdos
+***/
+
+.dd-tcenter {
+  text-align: center;
+}
+
+.dd-tleft {
+  text-align: left;
+}
+
+.dd-tright {
+  text-align: right;
+}
+
+.dd-tjustify {
+  text-align: justify;
+}
+
+.dd-imgcenter {
+  display: block;
+  margin: 0 auto;
+}
+
+/*** - ***/
+
+/***
+**** 1.2 Centralizando blocos
+***/
+
+.dd-fcenter {
+  display: block;
+  margin: 0 auto;
+}
+
+.dd-fleft {
+  float: left;
+}
+
+.dd-fright {
+  float: right;
+}
+
+.dd-fnone {
+  float: none;
+}
+
+/*** - ***/
+
+/***
+**** 1.3 Centralizando verticalmente
+***/
+
+.dd-box-center {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
