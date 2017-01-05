@@ -24,3 +24,31 @@ Este comando cria um novo arquivo `style.css` no mesmo diretório traduzindo as 
 
 ## Atualização do Repositório e Bower
 
+Vamos supor que vamos fazer uma alteração no DS e que agora vai sair a versão 1.1.x. A primeira coisa a se fazer é editar o arquivo bower.json. Devemos atualizar o "version" do arquivo para "1.1.6". Exemplo:
+
+```
+{
+  "name" : "din-style-framework",
+  "version" : "1.1.x"
+  ...
+}
+```
+
+Em seguida, devemos comitar a atualização:
+
+```
+git add .
+git commit -m "Nova versão"
+```
+
+E após, taggear o commit da nova release:
+
+```
+git tag -a v1.1.x -m "Release versão 1.1.x"
+```
+
+E por fim, subir a nova versão para as branchies master e tag 1.1.6:
+
+```
+git push origin master --tags
+```
